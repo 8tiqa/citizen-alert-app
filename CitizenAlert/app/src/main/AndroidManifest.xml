@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bese3.nauman.citizen" >
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <!-- The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--  <uses-library android:name="com.google.android.maps"/> -->
+
+    <uses-sdk
+        android:targetSdkVersion="21"
+        android:minSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:debuggable="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.bese3.nauman.citizen.data.AppController">
+
+        <activity
+            android:name=".Splash"
+            android:label="Citizens Alert">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <uses-library android:name="com.google.android.maps"/>
+
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/title_activity_main_menu" >
+        </activity>
+
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+
+       <activity
+            android:name=".LoginActivity2"
+            android:label="@string/title_activity_login_activity2" >
+        </activity>
+
+        <activity
+            android:name=".ReportEmergency"
+            android:label="Report Emergency" >
+        </activity>
+
+        <activity
+            android:name=".EnterEmergencyDetails"
+            android:label="Enter Emergency Details" >
+        </activity>
+
+        <activity
+            android:name=".ViewEmergency"
+            android:label="View Emergency" >
+        </activity>
+
+        <activity
+            android:name=".DeleteEmergency"
+            android:label="Delete Emergency" >
+        </activity>
+
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBggF_0OgsxTLitRZrcuJys_McNQ8H55Qg"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.bese3.nauman.citizen.MainMenuActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/ViewEmergency"
+            android:src="@drawable/view"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:paddingBottom="20dp"
+            android:layout_alignTop="@+id/ReportEmergency"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/ReportEmergency"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/gen_report"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:paddingBottom="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="INTERACT"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/ViewEmergency"
+            android:layout_alignRight="@+id/ViewEmergency"
+            android:layout_alignEnd="@+id/ViewEmergency" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="REPORT EMERGENCY"
+            android:id="@+id/textView3"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/ReportEmergency"
+            android:layout_alignLeft="@+id/ReportEmergency"
+            android:layout_alignStart="@+id/ReportEmergency" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/DeleteEmergency"
+            android:src="@drawable/edit_report"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:paddingBottom="20dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/logoutbtn"
+            android:src="@drawable/logout"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:paddingBottom="20dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="EDIT/DELETE REPORT"
+            android:id="@+id/textView4"
+            android:textStyle="bold"
+            android:textSize="21dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/DeleteEmergency"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/DeleteEmergency"
+            android:layout_alignEnd="@+id/DeleteEmergency" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="LOGOUT"
+            android:id="@+id/textView5"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/logoutbtn"
+            android:layout_alignRight="@+id/logoutbtn"
+            android:layout_alignEnd="@+id/logoutbtn" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

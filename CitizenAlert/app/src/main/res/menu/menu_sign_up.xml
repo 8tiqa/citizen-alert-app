@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bese3.nauman.citizen.SignUp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <item
+        android:id="@+id/action_submit"
+        android:icon="@drawable/ic_action_check"
+        android:title="Submit"
+        app:showAsAction="always"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</menu>

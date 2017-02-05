@@ -1,0 +1,90 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Emergency Details"
+        android:textSize="15pt"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/emergency_location"
+        android:layout_height="wrap_content"
+        android:hint="Emergency Location"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/people_affected"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </EditText>
+
+    <EditText
+        android:id="@+id/people_affected"
+        android:layout_height="wrap_content"
+        android:hint="People Affected"
+        android:inputType="textPersonName"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/TextViewTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </EditText>
+
+    <EditText
+        android:id="@+id/emergency_details"
+        android:layout_height="wrap_content"
+        android:hint="Emergency Details"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/Date"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </EditText>
+
+
+    <!-- <TimePicker
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/timePicker"
+         android:layout_gravity="center_horizontal" />-->
+
+    <!-- <DatePicker
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/datePicker" />-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Date"
+        android:hint="Date: DD/MM/YYYY"
+        android:layout_below="@+id/emergency_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/enter_emergency_details"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:onClick="sendFeedback"
+        android:background="#ff6797c4"
+        android:textColor="@color/background_material_light"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+    </Button>
+
+
+    <!--Put form controls here-->
+
+</RelativeLayout>

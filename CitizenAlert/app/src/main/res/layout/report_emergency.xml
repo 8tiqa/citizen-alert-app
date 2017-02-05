@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity"
+    android:weightSum="5">
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:id="@+id/report_health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/background_material_light"
+        android:background="#ff6797c4"
+        android:text="Health"
+        android:layout_weight="1"
+        android:onClick="addHealthMarker"
+        android:layout_alignTop="@+id/report_fire"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/report_fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/background_material_light"
+        android:background="#ff6797c4"
+        android:text="Fire"
+        android:layout_weight="1"
+        android:onClick="addFireMarker"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignTop="@+id/report_crime"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/report_crime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/background_material_light"
+        android:background="#ff6797c4"
+        android:text="Crime"
+        android:layout_weight="1"
+        android:onClick="addCrimeMarker"
+        android:layout_gravity="right|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/report_button"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/background_material_light"
+        android:background="#ff6797c4"
+        android:text="REPORT"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+
+
+
